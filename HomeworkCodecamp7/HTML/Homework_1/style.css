@@ -1,0 +1,98 @@
+html, body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.top-header {
+    background-color: hotpink;
+}
+
+.menu-item {
+    color: floralwhite;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.block {
+    background-color: whitesmoke;
+    padding: 20px;
+    margin: 30px;
+}
+
+.image {
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+q { 
+    color: hotpink;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+
+.row {
+      display: flex;
+}
+
+.column {
+      flex: 50%;
+      padding: 10px;
+      height: 150px;
+}
+
+div.gallery {
+    margin: 25px 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 221px;
+}
+  
+div.gallery:hover {
+    border: 1px solid #777777;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+  
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+  
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
