@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Challenge</title>
+
+    <script src="https://kit.fontawesome.com/a886f70f5f.js" crossorigin="anonymous"></script>
+
+    <style>
+
+        form {
+            width: 50%;
+        }
+
+        label {
+            padding-left: 20px;
+        }
+
+        h4 {
+            background-color: lightpink;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>FORM</legend>
+
+            <br>
+
+            <label for="" style="padding-right: 75px;" required>Name <span style="color:tomato;">*</span> :</label>
+            <input type="text" name="name" style="width: 200px;">
+            <i class="fas fa-question-circle" onclick="alert('Hello World!')"></i>
+            <br><br>
+
+            <label for="" style="padding-right: 58px;" required>Tab Text <span style="color:tomato;">*</span> :</label>
+            <input type="text" name="tabText" style="width: 200px;">
+            <i class="fas fa-question-circle" onclick="alert('Hello World!')"></i>
+            <br><br>
+
+            <label for="" style="padding-right: 82px;" required>URL 
+                <span style="color:tomato;">*</span> :
+            </label>
+            <p style="display: inline;">http://www.wizehive.com/webform/</p>
+            <input type="url" name="tabText" style="width: 120px;">
+            <br><br>
+
+            <h4>FORM SETUP</h4>
+
+            <label for="" style="padding-right: 95px;">Form :</label>
+            <select name="form" id="" style="width: 200px;">
+                <option value="">Select</option>
+                <option value="f1">Form 1</option>
+                <option value="f2">Form 2</option>
+                <option value="f3">Form 3</option>
+                <option value="f4">Form 4</option>
+                <option value="f5">Form 5</option>
+            </select>
+            <input type="button" onclick="alert('Hello World!')" value="Edit">
+            <br><br>
+
+            <label for="" style="padding-right: 95px;">Logo :</label>
+            <input type="file" name="logo" accept="logo/*">
+            <br><br>
+            
+            <label for="" style="padding-right: 37px;">Template Text :</label>
+            <select name="templateText" id="" style="width: 200px;">
+                <option value="">Select</option>
+                <option value="t1">Template Text 1</option>
+                <option value="t2">Template Text  2</option>
+                <option value="t3">Template Text  3</option>
+                <option value="t4">Template Text  4</option>
+                <option value="t5">Template Text  5</option>
+            </select>
+            <input type="button" onclick="alert('Hello World!')" value="Edit">
+            <br><br>
+
+            <label for="" style="padding-right: 42px;">Review Form :</label>
+            <select name="reviewForm" id="" style="width: 200px;">
+                <option value="">Select</option>
+                <option value="rf1">Review Form 1</option>
+                <option value="rf2">Review Form  2</option>
+                <option value="rf3">Review Form  3</option>
+                <option value="rf4">Review Form  4</option>
+                <option value="rf5">Review Form  5</option>
+            </select>
+            <br><br>
+
+            <label for="" style="padding-right: 40px;">Review Score :</label>
+            <select name="reviewScore" id="" style="width: 200px;">
+                <option value="">Select</option>
+                <option value="rs1">Review Score 1</option>
+                <option value="rs2">Review Score  2</option>
+                <option value="rs3">Review Score  3</option>
+                <option value="rs4">Review Score  4</option>
+                <option value="rs5">Review Score  5</option>
+            </select>
+            <input type="button" onclick="alert('Hello World!')" value="Reload Fields">
+            <br><br>
+
+            <label for="" style="padding-right: 44px;">Scoring Type :</label>
+            <select name="reviewForm" id="" style="width: 200px;">
+                <option value="">Select</option>
+                <option value="st1">Scoring Type 1</option>
+                <option value="st2">Scoring Type  2</option>
+                <option value="st3">Scoring Type  3</option>
+                <option value="st4">Scoring Type 4</option>
+                <option value="st5">Scoring Type  5</option>
+            </select>
+            <br><br>
+
+            <label for="" style="padding-right: 60px;">Max Score :</label>
+            <input type="number" name="maxScore" step="0.01" value="0.00" placeholder="0.00" style="width: 200px;">
+            <br><br>
+
+
+        </fieldset>
+    </form>
+</body>
+</html>

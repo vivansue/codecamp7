@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Review</title>
+
+    <link rel="stylesheet" href="./style_css_review.css" type="text/css">
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+
+        /* CSS syntax - Example */
+        .csssyntax {
+            color: hotpink;
+            font-size: 20px;
+        } 
+
+
+        /* CSS writing - Example */
+        .internalcssHeading {
+            color: cornflowerblue;
+        }
+
+        .internalcssParagraph {
+            color: lightblue;
+        }
+
+
+        /* Selector - Example */
+        .selector {
+            background-color: dodgerblue;
+            color: ghostwhite;
+            width: 50%;
+            padding: 10px;
+        }
+
+
+        /* Combinator - Example */
+
+        /* Descendant Selector */
+        div p {
+            background-color: lavender;
+            width: 50%;
+        }
+
+        /* Child Selector */
+        div > h4 {
+            background-color: lavenderblush;
+            width: 50%;
+        }
+
+        /* Adjacent Sibling Selector */
+        div + h5 {
+        background-color: lemonchiffon;
+        width: 50%;
+        }
+
+        /* General Sibling Selector */
+        div ~ h6 {
+            background-color: lightseagreen;
+            width: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Review</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>CSS syntax</th>
+                <th>CSS writing</th>
+                <th>Selector</th>
+                <th>Combinator</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    ประกอบด้วย<br>
+                    <ul>
+                        <li>selector</li>
+                        <li>declaration</li>
+                        <ul>
+                            <li>property</li>
+                            <li>value</li>
+                        </ul>
+                    </ul>
+                </td>
+                <td>
+                    มี 3 แบบ คือ<br>
+                    <ul>
+                        <li>inline css</li>
+                        <li>internal css</li>
+                        <li>external css</li>
+                    </ul>
+                </td>
+                <td>
+                    มี 6 แบบ คือ<br>
+                    <ul>
+                        <li>id</li>
+                        <li>class</li>
+                        <li>pseudo element</li>
+                        <li>pseudo class</li>
+                        <li>combinator</li>
+                        <li>attribute selector</li>
+                    </ul>
+                </td>
+                <td>
+                    มี 4 แบบ คือ<br>
+                    <ul>
+                        <li>descendant selector (space)</li>
+                        <li>child selector (>)</li>
+                        <li>adjacent sibling selector (+)</li>
+                        <li>general sibling selector (~)</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h2>CSS syntax - Example</h2>
+    <p class="csssyntax">Hello World!</p>
+    <p class="csssyntax">These paragraphs are styled with CSS.</p>
+    <br><br>
+
+
+    <h2>CSS writing - Example</h2>
+
+    <h3>#Inline CSS</h3>
+    <h3 style="color: cornflowerblue;">This is a heading</h3>
+    <p style="color: lightblue;">This is a paragraph.</p>
+    <br>
+
+    <h3>#Internal CSS</h3>
+    <h3 class="internalcssHeading">This is a heading</h3>
+    <p class="internalcssParagraph">This is a paragraph.</p>
+    <br>
+
+    <h3>#External CSS</h3>
+    <h3 class="externalcssHeading">This is a heading</h3>
+    <p class="externalcssParagraph">This is a paragraph.</p>
+    <br><br>
+
+
+    <h2>Selector - Example</h2>
+    <p class="selector">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, harum!</p>
+    <br><br>
+
+
+    <h2>Combinator - Example</h2>
+
+    <h3>#Descendant Selector</h3>
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section><p>Paragraph 3 in the div.</p></section>
+    </div>
+      
+    <p>Paragraph 4. Not in a div.</p>
+    <p>Paragraph 5. Not in a div.</p>
+    <br>
+
+    <h3>#Child Selector</h3>
+    <div>
+        <h4>Heading4 1 in the div.</h4>
+        <h4>Heading4 2 in the div.</h4>
+        <section><h4>Heading5 3 in the div.</h4></section> <!-- not Child but Descendant -->
+        <h4>Heading4 4 in the div.</h4>
+    </div>
+      
+    <h4>Heading5 5 Not in a div.</h4>
+    <h4>Heading5 6 Not in a div.</h4>
+    <br>
+
+    <h3>#Adjacent Sibling Selector</h3>
+    <div>
+        <h5>Heading5 1 in the div.</h5>
+        <h5>Heading5 2 in the div.</h5>
+    </div>
+      
+    <h5>Heading5 3. Not in a div.</h5>
+    <h5>Heading5 4. Not in a div.</h5>
+    <br>
+
+    <h3>#General Sibling Selector</h3>
+    <div>
+        <h6>Heading6 1</h6>
+    </div>
+    <h6>Heading6 2</h6>
+    <code>Some code.</code>
+    <h6>Heading6 3</h6>
+    <br><br>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property vs Value</th>
+                <th>Property</th>
+                <th>Value unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>property คือ ชื่อคุณสมบัติของ css เช่น width, height, position ฯลฯ</li>
+                        <li>value คือ ค่าที่ต้องการให้แสดง เช่น ตัวอักษรสีแดง, ตัวอักษรแบบ tahoma, ตัวอักษรขนาด 12 pt</li>
+                    </ul>
+                </td>
+                <td>
+                    มี 5 กลุ่ม คือ<br>
+                    <ul>
+                        <li>content: color , size , font , text, list-style-type, Height, Width, background</li>
+                        <li>border: border, table</li>
+                        <li>padding: padding (top right buttom left)</li>
+                        <li>margin: margin (top right buttom left)</li>
+                        <li>element: display, height, width, position, float, align, flex, grid</li>
+                    </ul>
+                </td>
+                <td>
+                    มี 2 ประเภท คือ<br>
+                    <ul>
+                        <li>Absolute Length (หน่วยแบบกำหนดตายตัว)</li>
+                        <ul>
+                            <li>in (inches) ขนาดเป็นนิ้ว ซึ่ง 1in = 2.54cm เช่น 2in, 1.5in</li>
+                            <li>cm (centimeters) ขนาดเป็นเซนติเมตร เช่น 2cm, 1.11cm</li>
+                            <li>mm (millimeters) ขนาดเป็นมิลลิเมตร เช่น 50mm, 0.8mm</li>
+                            <li>pt (points) 1/72in เช่น 12pt, 20pt</li>
+                            <li>pc (picas) 1/12in เช่น 1pc, 2pc</li>
+                            <li>px (pixels) 1/96in เช่น 1px, 4px</li>
+                        </ul>
+                        <li>Relative Length (หน่วยแบบกำหนดแบบอัตราส่วน)</li>
+                        <ul>
+                            <li>em (emphasize) เท่าขนาดฟอนต์ของ element</li>
+                            <li>ex (x-height) เท่าความสูงฟอนต์ของ element เช่น 1.5ex, 2ex ไม่ค่อยนิยมใช้</li>
+                            <li>% (percent) เปอร์เซ็นของ parent element สัมพันธ์ตามขนาดหน้าจอ เช่น 50%, 100%</li>
+                            <li>ch ความกว้างของตัวหนังสือใน parent element</li>
+                            <li>rem เท่าขนาดฟอนต์ของ root element</li>
+                            <li>vw เปอร์เซ็นต์ความกว้างหน้าจอ</li>
+                            <li>vh เปอร์เซ็นต์ความสูงหน้าจอ</li>
+                            <li>vmin เปอร์เซ็นต์ของ view point ต่ำสุด</li>
+                            <li>vmax เปอร์เซ็นต์ของ view point สูงสุด</li>
+                        </ul>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
